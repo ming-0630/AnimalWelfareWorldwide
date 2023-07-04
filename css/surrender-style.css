@@ -1,0 +1,896 @@
+@import url("https://fonts.googleapis.com/css?family=Annie Use Your Telescope");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,700;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+/* ======== Global ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+}
+
+/* ======== Top navigation bar ========= */
+
+.topnav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+    width: 100%;
+  }
+  
+  .nav {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav a {
+    color: #E98074;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  
+  .hovereffect::after {
+    content: "";
+    display: block;
+    margin-top: 2px;
+    width: 0;
+    height: 2px;
+    background: #EAE7DC;
+    transition: width 0.3s;
+  }
+  
+  .hovereffect:hover {
+    color: #EAE7DC;
+  }
+  
+  .hovereffect:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+  
+  .open {
+    border: 0.16em solid #E98074;
+    background-color: transparent;
+    color: #EAE7DC;
+    font-size: 1em;
+    transition: all 0.2s;
+    width: 100px;
+    height: 40px;
+    font-family: "Raleway", sans-serif;
+    border-radius: 2em;
+    margin: 10px;
+  }
+  
+  .open:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  .open:focus,
+  .open:active {
+    opacity: 0.6;
+    outline: none;
+  }
+  
+  .register {
+    border: none;
+    background-color: #E98074;
+    color: white;
+    font-size: 1em;
+    transition: all 0.2s;
+    width: 100px;
+    height: 40px;
+    font-family: "Raleway", sans-serif;
+    border-radius: 2em;
+    margin: 10px 50px 10px 10px;
+  }
+  
+  .register:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  .register:focus,
+  .register:active {
+    opacity: 0.6;
+    outline: none;
+  }
+  
+  .logout {
+    border: 0.16em solid #E98074;
+    background-color: transparent;
+    color: #EAE7DC;
+    font-size: 1em;
+    transition: all 0.2s;
+    width: 100px;
+    height: 40px;
+    font-family: "Raleway", sans-serif;
+    border-radius: 2em;
+    margin: 10px;
+    margin-right: 30px;
+  }
+  
+  .logout:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  .logout:focus,
+  .logout:active {
+    opacity: 0.6;
+    outline: none;
+  }
+  
+  .profile {
+    border: none;
+    background-color: #E98074;
+    color: white;
+    font-size: 1em;
+    transition: all 0.2s;
+    width: 110px;
+    height: 40px;
+    font-family: "Raleway", sans-serif;
+    border-radius: 2em;
+    margin: 10px 10px 10px 10px;
+  }
+  
+  .profile:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  .profile:focus,
+  .profile:active {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  /* ======== Surrender Main ========= */
+
+.surrender-main {
+    background-image: url("../img/cat5.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 86vh;
+  }
+  
+  .surrender-main img {
+    height: auto;
+    width: 450px;
+    margin-top: 15px;
+    margin-left: 50px;
+    position: absolute;
+  }
+  
+  .surrender-main h2 {
+    color: #E98074;
+    text-align: right;
+    padding: 10px;
+    float: right;
+    position: relative;
+    top: 50px;
+    margin-right: 80px;
+    font-size: 4vw;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .surrender-main p {
+    color: white;
+    text-align: right;
+    padding: 10px;
+    position: relative;
+    top: 215px;
+    right:-320px;
+    font-size: 1vw;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  .surrender-container {
+    position: absolute;
+    top: 330px;
+    right: 50px;  
+    width: 30%;
+    height: 20%;
+    display: flex;
+  }
+
+  .surrender-form-button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .surrender-form-button button {
+    border: 3px solid white;
+    border-radius: 6em;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
+    width: 100%;
+    height: 70%;
+    font-size: 2.2em;
+    font-family: "Annie Use Your Telescope", sans-serif;
+    color: white;
+    background-color: transparent;
+    text-shadow: 2px 2px 5px #E98074;
+  }
+  
+  .surrender-form-button button:hover {
+    cursor: pointer;
+    color:black;
+    background-color: #E98074;
+    border: 3px solid #E98074;
+  }
+  
+  .surrender-form-button button:focus,
+  .surrender-form-button button:active { 
+    outline: none;
+  }
+  
+  .surrender-buttons {
+    flex: 1;
+  }
+  
+  .surrender-buttons button {
+    border: 0px;
+    border-radius: 2em;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
+    width: 80%;
+    height: 50px;
+    font-size: 1.8em;
+    font-family: "Annie Use Your Telescope", sans-serif;
+    color: black;
+    background-color: #E98074;
+  }
+  
+  .surrender-buttons button:focus,
+  .surrender-buttons button:active { 
+    outline: none;
+  }
+  
+  .surrender-register button { 
+    font-size: 1.8em;
+    color: #E98074;
+    background-color: black;
+  }
+  
+  .surrender-buttons button:hover {
+    cursor: pointer;
+    border: 3px solid black;
+  }
+  
+  .surrender-register button:hover {
+    cursor: pointer;
+    border: 3px solid #E98074;
+  }
+
+  /* ======== Login + Login Form ========= */
+
+.login {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .login button {
+    background-color: #E98074;
+    color: #EAE7DC;
+    font-size: 1.3em;
+    padding: 14px 20px;
+    margin: 15px 0px 2px 0px;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .login p {
+    font-size: 1.3em;
+    color: #E98074;
+    margin: 20px 20px 20px 20px;
+  }
+  
+  .login-form {
+    border: 3px solid #E98074;
+    border-radius: 2em;
+    background-color: black;
+    margin: 5% auto 15% auto;
+    width: 40%;
+  }
+  
+  .closelogin {
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    color: #EAE7DC;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .closelogin:hover {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .logincreds button:hover {
+    opacity: 0.8;
+  }
+  
+  .logincreds {
+    padding: 0px 24px 15px 24px;
+  }
+  
+  .show {
+    margin: 9px 9px 2px 9px;
+  }
+  
+  .logincreds a {
+    position: relative;
+    float: right;
+    margin: 6px 6px 2px 6px;
+    text-decoration: none;
+  }
+  
+  .logincreds input[type=text],
+  .logincreds input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .animate {
+    animation: animatezoom 0.6s;
+  }
+  
+  @keyframes animatezoom {
+    from {
+      transform: scale(0)
+    }
+  
+    to {
+      transform: scale(1)
+    }
+  }
+  
+  /* ======== Registeration Form ========= */
+  
+  
+  .registerbg {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .register-container {
+    width: 50%;
+    height: 75vh;
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    border: 4px solid #E98074;
+    border-radius: 2em;
+    background-color: black;
+    box-shadow: 2px 2px 5px black;
+  }
+  
+  .registerimg {
+    width: 50%;
+  }
+  
+  .registerimg img {
+    position: relative;
+    height: 100%;
+    width: auto;
+    right: 0px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px 5px 30px;
+  }
+  
+  .register-form h1 {
+    font-size: 1.5em;
+    color: #E98074;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-right: 0px;
+  }
+
+  .form-header {
+    display: flex;
+  }
+  
+  .register-form input[type=text],
+  .register-form input[type=password],
+  .register-form input[type=tel],
+  .register-form input[type=email] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .register-form input[type=date],
+  .register-form input[type=radio] {
+    margin: 10px 0px;
+  }
+  
+  .register-form input[type=submit] {
+    background-color: #E98074;
+    color: black;
+    font-size: 1.3em;
+    padding: 14px 20px;
+    margin: 5px 0px 2px 0px;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .closeregister {
+    margin: 0;
+    position: relative;
+    color: #EAE7DC;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .closeregister:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  /* ======== Homepage Footer ========= */
+
+.footer {
+    background-color: black;
+    min-height: 6vh;
+  }
+  
+  .socialfooter {
+    margin-right: 10px;
+  }
+  
+  .footer img {
+    width: 30px;
+    height: auto;
+    margin: 4px;
+    position: relative;
+    float: right;
+  }
+
+  /* ======== Surrender Form========= */
+
+.surrender-form-main {
+  min-height: 86vh;
+  display: flex;
+  background-image: url(http://localhost/wdt%20assignment/img/cat3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.surrender-form-container {
+  width: 55%;
+  height: 73%;
+  position: absolute;
+  right: 20px;
+  margin: 45px 20px 20px 20px;
+  background-color: rgb(54, 54, 54);
+  border-radius: 0.5em;
+  box-shadow: 2px 2px 5px #E98074;
+}
+
+.surrender-form-container h1 {
+  margin: 17px 25px 10px 25px;
+  color: #E98074;
+}
+
+.surrender-form-container p {
+  margin: 0px 25px;
+  text-align: justify;
+  color: #EAE7DC;
+}
+
+.surrender-form {
+  margin: 5px 20px;
+}
+
+.surrender-form input[type=text],
+.surrender-form input[type=number] {
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.surrender-form input[name="petname"] {
+  width: 68%;
+  margin-right: 7px;
+}
+
+.surrender-form input[name="pettype"],
+.surrender-form input[name="petbreed"] {
+  width: 30%;
+}
+
+.surrender-form input[name="petage"] {
+  width: 25%;
+}
+
+.surrender-form input[name="location"] {
+  width: 41%;
+}
+
+.surrender-form input[name="petage"],
+.surrender-form input[name="location"] {
+  margin-left: 9px;
+}
+
+.surrender-form textarea {
+  width: 100%;
+  height: 87px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.gender-container {
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+
+.petimg-container {
+  border: 1px solid grey;
+  background-color: white;
+  padding: 8px 3px 8px 12px;
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+
+.petimg-container input[type="file"] {
+  margin: 8px 5px 5px 0px;
+}
+
+.surrender-form input[type=submit] {
+  background-color: #E98074;
+  color: white;
+  padding: 13px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 2em;
+  cursor: pointer;
+  width: 100%;
+}
+
+  /* ======== Profile page ========= */
+.profile-main {
+  height: 86vh;
+  background-color: #E98074;
+}
+
+#greeting {
+  color: black;
+  font-size: 3em;
+  margin: 25px 0px 10px 100px;
+}
+
+.button-container {
+  margin-left: 80px;
+}
+
+.profile-button {
+  border: none;
+  background-color: black;
+  color: #E98074;
+  font-size: 1.2em;
+  transition: all 0.2s;
+  width: 220px;
+  height: 60px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 2em;
+  margin: 10px 10px 10px 10px;
+}
+
+.profile-button:hover {
+  cursor: pointer;
+}
+
+.profile-button:focus,
+.profile-button:active {
+  outline: none;
+}
+
+.requests-container {
+  width: 85%;
+  height: 380px;
+  margin: 0px 95px 25px 95px;
+  overflow: auto;
+  border: 2px solid black;
+}
+
+.profile-main h2 {
+  color: #EAE7DC;
+  margin: 15px 0px 15px 100px;
+}
+
+.requests {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #E98074;
+}
+
+.requests th {
+  background-color: #E98074;
+  color: black;
+}
+
+.requests td {
+  background-color: black;
+  color: #E98074;
+}
+
+.requests th,
+.requests td {
+  padding: 8px;
+}
+
+.requests tr {
+  border-bottom: 1px solid #7e7d7d;
+}
+
+.requests-button {
+  border: none;
+  background-color:#E98074;
+  color: black;
+  font-size: 1em;
+  transition: all 0.2s;
+  width: 100px;
+  height: 40px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 2em;
+  margin: 10px 5px;
+}
+
+.requests-button:hover,
+.requests-button:focus,
+.requests-button:active {
+  opacity: 0.8;
+  cursor: pointer;
+  outline: none;
+}
+
+#td-buttons {
+  padding-left: 0px;
+  width: 30%;
+}
+
+#requests-status {
+  margin-left: 20px;
+  width: 150px;
+  color: #EAE7DC;
+}
+
+.status-true {
+  background-color: #57b939;
+}
+
+.status-false {
+  background-color: #f14936;
+}
+
+/* ======== Edit Profile ========= */
+
+.edit-profile {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.edit-profile-container{
+  height: 60%;
+  width: 50%;
+  margin: 50px auto;
+  background-color: black;
+  border-radius: 2em;
+  color: #E98074;
+}
+
+.edit-profile-container h1 {
+  color: #EAE7DC;
+  font-size: 3em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.close-edit-profile {
+  position: relative;
+  float: right;
+  right: 30px;
+  top: 5px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close-edit-profile:hover {
+  color: red;
+  cursor: pointer;
+}
+
+  /* ======== Pet Details Edit ========= */
+
+  .surrender-edit-main {
+    height: 86vh;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(54, 54, 54);
+    border: 10px solid #E98074;
+  }
+
+  .deleteBtn {
+    position: absolute;
+    right:5px;
+    margin-right: 15px;
+    padding: 15px 5px;
+    background-color: #E98074;
+    border-radius: 2em;
+    width: 20%;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .surrender-edit-container {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    background-color: rgb(54, 54, 54);
+    overflow: auto;
+    margin-right: 10px;
+  }
+  
+  .surrender-edit-container h1 {
+    margin: 5px 25px 10px 25px;
+    color: #EAE7DC;
+  }
+  
+  .surrender-edit-form {
+    margin: 5px 20px;
+  }
+
+  .surrender-edit-form label {
+    color: #E98074;
+    padding: 5px;
+  }
+  
+  .surrender-edit-form input[type=text],
+  .surrender-edit-form input[type=number] {
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .surrender-edit-form textarea {
+    width: 100%;
+    height: 87px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  
+  .gender-edit-container {
+    margin-bottom: 8px;
+    margin-left: 5px;
+  }
+  
+  .petimg-edit-container {
+    background-color: rgb(54, 54, 54);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-right: 5px solid #E98074;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+
+  .petimg-edit-container h1 {
+    color: #EAE7DC;
+  }
+  
+  .upload-img-container {
+    flex: 1;
+    margin: 5px;
+    padding-top: 25px;
+  }
+
+  .upload-img-container label {
+    color: #E98074;
+  }
+
+  .current-img {
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    height: 100px;
+  }
+
+  .current-img p {
+    color: #E98074;
+    padding: 5px;
+    padding-left: 0px;
+  }
+
+  .current-img img{ 
+    border: 3px solid #EAE7DC;
+    margin-top: 10px;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .petimg-edit-container input[type="file"] {
+    margin: 8px 5px 5px 0px;
+    color: #E98074;
+  }
+  
+  .surrender-edit-form input[type=submit] {
+    background-color: #E98074;
+    color: white;
+    padding: 13px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .upload-img input[type="submit"] {
+    padding: 15px 5px;
+    background-color: #E98074;
+    border-radius: 2em;
+    width: 20%;
+    color: white;
+    margin-top: 10px;
+  }
+
+  .upload-img input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }

@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css?family=Annie Use Your Telescope");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,700;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+
+/* ======== Global ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(179, 179, 179);
+}
+
+.home-container {
+    display: flex;
+    height: 100vh;
+}
+
+.home-left {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.home-left img {
+    width: 80%;
+    margin: auto auto;
+}
+
+.home-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-right h1 {
+    font-weight: 500;
+}
+
+.login {
+    padding: 25px;
+}
+
+.logincreds input[type="text"],
+.logincreds input[type="password"] {
+    padding: 10px;
+    margin: 5px;
+    width: 35%;
+}
+
+.logincreds input[type="checkbox"] {
+    margin: 10px;
+    margin-left: -30px;
+}
+
+.logincreds button {
+    color: black;
+    background-color: white;
+    padding: 15px 12px;
+    font-size: 1em;
+    margin: 15px 0px 2px 0px;
+    border: 2px solid white;
+    border-radius: 2em;
+    cursor: pointer;
+    width: 30%;
+}
+
+.logincreds button:hover {
+    border: 2px solid black;
+}
+
+/* ======== Main Page ========= */
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-container h1 {
+    position: relative;
+    margin-bottom: 10px;
+    left: 100px;
+}
+
+.logout-btn {
+    position: relative;
+    float: right;
+    color: white;
+    background-color: transparent;
+    padding: 10px 5px;
+    font-size: 1em;
+    margin: 0px 50px 10px 0px;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 8%;
+}
+
+.logout-btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.button-container a {
+    width: 0;
+    height: 0;
+}
+
+.button-container {
+    margin-right: 120px;
+}
+
+.sort-button {
+    position: relative;
+    float: right;
+    color: black;
+    background-color: white;
+    padding: 15px 12px;
+    font-size: 1em;
+    margin: 0px 10px 10px 0px;
+    border: 2px solid white;
+    border-radius: 2em;
+    cursor: pointer;
+    width: 10%;
+}
+
+.button-not {
+    width: 20%;
+}
+
+#smaller-logo {
+    width: 400px;
+    height: auto;
+}
+
+.image-container {
+    margin: 30px;
+    height: auto;
+}
+
+.listing-edit-container {
+    width: 85%;
+    height: 410px;
+    margin: 0px 95px 20px 95px;
+    overflow: auto;
+    border: 2px solid black;
+}
+
+.listing-edit-table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.listing-edit-table tr {
+    border-bottom: 1px solid #7e7d7d;
+}
+
+.listing-edit-table th,
+.listing-edit-table td {
+    padding: 12px;
+}
+
+.listing-edit-table th {
+    background-color: white;
+}
+
+.listing-edit-table td {
+    word-wrap: break-word;
+}
+
+.view-button {
+    color: white;
+    background-color: #7e7d7d;
+    padding: 15px 12px;
+    margin-left: -50px;
+    font-size: 1em;
+    border: 2px solid #424242;
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 70%;
+}
+
+/* ======== Add New Page ========= */
+
+.add-new-bg {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    justify-content: center;
+}
+
+.animate {
+    animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.add-new-container {
+    width: 50%;
+    height: 75vh;
+    display: flex;
+    margin: auto;
+    border: 4px solid white;
+    border-radius: 2em;
+    background-color: #7e7d7d;
+    box-shadow: 2px 2px 5px black;
+}
+
+.add-new-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px
+}
+
+.form-header span { 
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-size: 2em;
+    font-weight: 800;
+    margin-right: 20px;
+}
+
+.form-header span:hover {
+    color:red;
+}
+
+.admin-form {
+    padding: 20px;
+}
+
+.admin-form input[type="text"] {
+    padding: 15px;
+    margin: 5px;
+    width: 100%;
+}
+
+.gender-container {
+    margin: 5px;
+}
+
+.admin-form textarea {
+    width: 100%;
+    height: 87px;
+    padding: 12px 20px;
+    margin: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.upload-container {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+.admin-form input[type="file"] {
+    margin-top: 5px;
+}
+
+.admin-form input[type="submit"] {
+    float: right;
+    color: black;
+    background-color: white;
+    padding: 12px 10px;
+    font-size: 1em;
+    border: 2px solid white;
+    border-radius: 2em;
+    cursor: pointer;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+
+/* ======== View Details Page ========= */
+
+.pet-form {
+    padding: 0px 50px 30px 50px;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+}
+
+.pet-form h1 {
+    position: absolute;
+    left: 50px;
+    font-size: 2.5em;
+}
+
+.petimg-container {
+    margin-top: 50px;
+    height: 400px;
+    border-radius: 2em;
+    border: 4px solid white;
+}
+
+.petimg-container img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.approval-form {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 1.3em;
+}
+
+.approval-form input {
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+.approval-form input[name="petage"] {
+    margin-left: 15px;
+}
+
+.approval-form input[name="location"] {
+    width: 84.7%;
+}
+
+.approval-form textarea {
+    width: 100%;
+    height: 87px;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.approval-form input[name=ownUsername] {
+    width: 72.1%;
+}
+
+.approval-form input[name="ownPhone"] {
+    width: 65%;
+}
+
+.approval-form input[name="ownEmail"] {
+    width: 78.8%;
+}
+
+.redirect {
+    margin-right: 300px;
+}
+
+.redirect button {
+    position: relative;
+    float: right;
+    padding: 10px;
+    margin: 0px 15px;
+    width: 200px;
+}
+
+.redirect button:hover {
+    opacity: 0.8;
+}
+
+.deleteBtn {
+    background-color: #f14e4e;
+    color: white;
+    cursor: pointer;
+}
+
+.approveBtn {
+    background-color: #54f14e;
+    color: black;
+    border: 3px solid #54f14e;
+    cursor: pointer;
+}
+
+.approveBtn-no {
+    background-color: transparent;
+    border: 3px solid #54f14e;
+}
+
+.approveBtn-no:hover {
+    background-color: #54f14e;
+    border: 3px solid #54f14e;
+}
